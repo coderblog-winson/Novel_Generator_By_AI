@@ -3,6 +3,7 @@
 import os
 import customtkinter as ctk
 from tkinter import messagebox
+from ui.generation_handlers import copy_to_clipboard
 from utils import read_file, save_string_to_txt, clear_file_content
 from ui.context_menu import TextWidgetContextMenu
 
@@ -13,7 +14,15 @@ def build_summary_tab(self):
     self.summary_tab.columnconfigure(0, weight=1)
 
     load_btn = ctk.CTkButton(self.summary_tab, text=_("Load %s") % "global_summary.txt", command=self.load_global_summary, font=("Microsoft YaHei", 12))
-    load_btn.grid(row=0, column=0, padx=5, pady=5, sticky="w")
+    load_btn.grid(row=0, column=0, padx=5, pady=5, sticky="w")   
+    
+    copy_btn = ctk.CTkButton(
+            self.summary_tab,
+            text=_("Copy to Clipboard"),
+            command=lambda: copy_to_clipboard(self, self.summary_text.get("0.0", "end").strip()),
+            font=("Microsoft YaHei", 12)
+        )
+    copy_btn.grid(row=0, column=0, padx=200, pady=5, sticky="w")
 
     save_btn = ctk.CTkButton(self.summary_tab, text="Save Modify", command=self.save_global_summary, font=("Microsoft YaHei", 12))
     save_btn.grid(row=0, column=0, padx=5, pady=5, sticky="e")

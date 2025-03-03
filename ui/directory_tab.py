@@ -4,6 +4,7 @@ import os
 import customtkinter as ctk
 from tkinter import messagebox
 from ui.context_menu import TextWidgetContextMenu
+from ui.generation_handlers import copy_to_clipboard
 from utils import read_file, save_string_to_txt, clear_file_content
 
 def build_directory_tab(self):
@@ -14,6 +15,14 @@ def build_directory_tab(self):
 
     load_btn = ctk.CTkButton(self.directory_tab, text=_("Load %s") % "Novel_outline.txt", command=self.load_chapter_blueprint, font=("Microsoft YaHei", 12))
     load_btn.grid(row=0, column=0, padx=5, pady=5, sticky="w")
+    
+    copy_btn = ctk.CTkButton(
+            self.directory_tab,
+            text=_("Copy to Clipboard"),
+            command=lambda: copy_to_clipboard(self, self.directory_text.get("0.0", "end").strip()),
+            font=("Microsoft YaHei", 12)
+        )
+    copy_btn.grid(row=0, column=0, padx=200, pady=5, sticky="w")
 
     save_btn = ctk.CTkButton(self.directory_tab, text=_("Save Modify"), command=self.save_chapter_blueprint, font=("Microsoft YaHei", 12))
     save_btn.grid(row=0, column=0, padx=5, pady=5, sticky="e")

@@ -208,6 +208,10 @@ msgstr "章节文件%s不存在！"
 msgid "Warning"
 msgstr "警告"
 
+#: ui/chapters_tab.py:21
+msgid "Copy to Clipboard"
+msgstr "复制到剪贴板"
+
 #: ui/chapters_tab.py:91
 msgid "No chapter has been selected and cannot be saved."
 msgstr "没有选择章节，也不能保存。"
@@ -581,7 +585,7 @@ msgid "Plot points/unresolved conflict"
 msgstr "情节/未解决的冲突"
 
 #: ui/generation_handlers.py:451
-msgid ""Content has been copied to clipboard successfully!""
+msgid "Content has been copied to clipboard successfully!"
 msgstr "内容已被成功复制到剪贴板!"
 
 #: ui/generation_handlers.py:453

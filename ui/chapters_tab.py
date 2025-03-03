@@ -4,6 +4,7 @@ import os
 import customtkinter as ctk
 from tkinter import messagebox
 from ui.context_menu import TextWidgetContextMenu
+from ui.generation_handlers import copy_to_clipboard
 from utils import read_file, save_string_to_txt, clear_file_content
 
 def build_chapters_tab(self):
@@ -31,7 +32,15 @@ def build_chapters_tab(self):
     self.chapter_select_menu.grid(row=0, column=2, padx=5, pady=5, sticky="w")
 
     save_btn = ctk.CTkButton(top_frame, text=_("Save Modification"), command=self.save_current_chapter, font=("Microsoft YaHei", 12))
-    save_btn.grid(row=0, column=3, padx=5, pady=5, sticky="w")
+    save_btn.grid(row=0, column=3, padx=5, pady=5, sticky="w")   
+    
+    copy_btn = ctk.CTkButton(
+            top_frame,
+            text=_("Copy to Clipboard"),
+            command=lambda: copy_to_clipboard(self, self.chapter_view_text.get("0.0", "end").strip()),
+            font=("Microsoft YaHei", 12)
+        )
+    copy_btn.grid(row=0, column=3, padx=200, pady=5, sticky="w")
 
     refresh_btn = ctk.CTkButton(top_frame, text=_("refresh chapter list"), command=self.refresh_chapters_list, font=("Microsoft YaHei", 12))
     refresh_btn.grid(row=0, column=4, padx=5, pady=5, sticky="e")

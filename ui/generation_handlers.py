@@ -458,6 +458,7 @@ def count_chinese_and_english(text):
 def copy_to_clipboard(self, content):
     try:            
         pyperclip.copy(content)
-        self.log(_("Content has been copied to clipboard successfully!"))
+        # self.log(_("Content has been copied to clipboard successfully!"))
+        messagebox.showinfo(_("Info"), _("Content has been copied to clipboard successfully!"))
     except Exception as e:
         self.log(_("Failed to copy content to clipboard: %s") % e)
