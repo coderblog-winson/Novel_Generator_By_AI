@@ -1,0 +1,733 @@
+# Chinese (Simplified, China) translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-03-02 22:00+0800\n"
+"PO-Revision-Date: 2025-03-02 22:01+0800\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: zh_Hans_CN <LL@li.org>\n"
+"Language: zh_Hans_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: chapter_directory_parser.py:128
+#, python-format
+msgid "Chapter %d"
+msgstr "第 %d 章"
+
+#: config_manager.py:35
+msgid "Start testing LLM configuration..."
+msgstr "开始测试LLM配置..."
+
+#: config_manager.py:49
+msgid "✅ LLM configuration test succeeded!"
+msgstr "LLM 配置测试成功了！"
+
+#: config_manager.py:52
+msgid "❌ LLM configuration test failed: no response was obtained"
+msgstr "❌LLM 配置测试失败：未获得响应"
+
+#: config_manager.py:54
+#, python-format
+msgid "❌ LLM configuration test error: %s"
+msgstr "❌LLM 配置测试错误：%s"
+
+#: config_manager.py:63
+msgid "Start testing the Embedding configuration..."
+msgstr "开始测试嵌入式配置..."
+
+#: config_manager.py:74
+msgid "✅ Embedding configuration test succeeded!"
+msgstr "✅嵌入配置测试成功了！"
+
+#: config_manager.py:77
+msgid "❌ Embedding configuration test failed: vector not obtained"
+msgstr "❌嵌入配置测试失败：未获得向量"
+
+#: config_manager.py:79
+#, python-format
+msgid "❌ Embedding configuration test error: %s"
+msgstr "❌嵌入配置测试错误：%s"
+
+#: consistency_checker.py:70
+msgid "No reply from the review Agent"
+msgstr "没有评论代理的答复"
+
+#: llm_adapters.py:66 llm_adapters.py:299
+msgid "No response from DeepSeekAdapter."
+msgstr "Deepseekadapter没有回应。"
+
+#: llm_adapters.py:94
+msgid "No response from OpenAIAdapter."
+msgstr "没有Openaiadapter的回应。"
+
+#: llm_adapters.py:124
+msgid "No text response from Gemini API."
+msgstr "Gemini API没有文本响应。"
+
+#: llm_adapters.py:163
+msgid "No response from AzureOpenAIAdapter."
+msgstr "没有AzureopenaiaiaDapter的反应。"
+
+#: llm_adapters.py:194
+msgid "No response from OllamaAdapter."
+msgstr "Ollamaadapter没有回应。"
+
+#: llm_adapters.py:219
+msgid "No response from MLStudioAdapter."
+msgstr "没有mlstudioadapter的响应。"
+
+#: llm_adapters.py:260
+msgid "You are a helpful assistant."
+msgstr "您是一个有益的助手。"
+
+#: llm_adapters.py:267
+msgid "No response from AzureAIAdapter."
+msgstr "没有Azureaiadapter的反应。"
+
+#: llm_adapters.py:293
+msgid "You are DeepSeek, an AI AI assistant"
+msgstr "您是DeepSeek，AI AI助手"
+
+#: utils.py:18
+#, python-format
+msgid "[read_file] An error occurred while reading a file: %s"
+msgstr "[read_file]读取文件时发生了错误：%s"
+
+#: utils.py:30
+#, python-format
+msgid "[append_text_to_file] An error occurred: %s"
+msgstr "[append_text_to_file]发生错误：%s"
+
+#: utils.py:38
+#, python-format
+msgid "[clear_file_content] Unable to clear the content of file: %s"
+msgstr "[clear_file_content]无法清除文件的内容：%s"
+
+#: utils.py:46
+#, python-format
+msgid "[save_string_to_txt] An error occurred while saving the file: %s"
+msgstr "[save_string_to_txt]保存文件时发生了错误：%s"
+
+#: utils.py:55
+#, python-format
+msgid "[save_data_to_json] Error saving data to JSON file: %s"
+msgstr "[save_data_to_json]错误保存数据到json文件：%s"
+
+#: novel_generator/architecture.py:175
+#, python-format
+msgid ""
+"## 1) LLM Model: %s\n\n"
+"## 2) Novel settings\n"
+"Topic: %s\nType: %s\nLength: about No. of %d chapters(Each chapter %d words)\n"
+"\n"
+"## 3) Core seeds\n"
+"%s\n"
+"\n"
+"## 4) Character Dynamics\n"
+"%s\n"
+"\n"
+"## 5) Worldview\n"
+"%s\n"
+"\n"
+"## 6) Three-act plot structure\n"
+"%s\n"
+msgstr ""
+"## 1) LLM 模型: %s\n\n"
+"## 2）小说设置\n"
+"主题：%s\n类型：%s\n长度：%d 章节（每章 %d 单词）\n"
+"\n"
+"## 3）核心种子\n"
+"%s\n"
+"\n"
+"## 4）角色动力学\n"
+"%s\n"
+"\n"
+"## 5）世界观\n"
+"%s\n"
+"\n"
+"## 6）三幕图结构\n"
+"%s\n"
+
+#: novel_generator/finalization.py:115
+#, python-format
+msgid ""
+"The following chapters have short text. Please expand them while keeping the plot coherent to make them more fulfilling, close to the word %d:\n"
+" Original content:%s"
+msgstr ""
+"以下章节有简短的文字。请扩展它们，同时保持情节相干以使它们更加充实，接近%d。\n"
+" 原始内容：%s"
+
+#: ui/chapters_tab.py:10
+msgid "Chapters Manage"
+msgstr "章节管理"
+
+#: ui/chapters_tab.py:23
+msgid "<< Previous Chapter"
+msgstr "<<上一章"
+
+#: ui/chapters_tab.py:26
+msgid "Next Chapter >>"
+msgstr "下一章>>"
+
+#: ui/chapters_tab.py:33
+msgid "Save Modification"
+msgstr "保存修改"
+
+#: ui/chapters_tab.py:36
+msgid "refresh chapter list"
+msgstr "刷新章节列表"
+
+#: ui/chapters_tab.py:50
+msgid ""
+"The chapters folder has not been found, please make a chapter or check the "
+"save path."
+msgstr "尚未找到章节文件夹，请进行章节或检查保存路径。"
+
+#: ui/chapters_tab.py:82
+#, python-format
+msgid "Chapter file %s does not exist!"
+msgstr "章节文件%s不存在！"
+
+#: ui/chapters_tab.py:91 ui/chapters_tab.py:95 ui/character_tab.py:28
+#: ui/character_tab.py:39 ui/directory_tab.py:28 ui/directory_tab.py:39
+#: ui/generation_handlers.py:24 ui/generation_handlers.py:68
+#: ui/generation_handlers.py:105 ui/generation_handlers.py:235
+#: ui/generation_handlers.py:315 ui/generation_handlers.py:393
+#: ui/generation_handlers.py:396 ui/generation_handlers.py:408
+#: ui/setting_tab.py:28 ui/setting_tab.py:39 ui/summary_tab.py:28
+#: ui/summary_tab.py:39
+msgid "Warning"
+msgstr "警告"
+
+#: ui/chapters_tab.py:91
+msgid "No chapter has been selected and cannot be saved."
+msgstr "没有选择章节，也不能保存。"
+
+#: ui/chapters_tab.py:95
+msgid "Please configure the save file path first"
+msgstr "请先配置保存文件路径"
+
+#: ui/chapters_tab.py:101
+#, python-format
+msgid "Save modifications to chapter %s."
+msgstr "将修改保存到章%s。"
+
+#: ui/chapters_tab.py:115 ui/chapters_tab.py:129 ui/config_tab.py:256
+#: ui/config_tab.py:305
+msgid "Info"
+msgstr "信息"
+
+#: ui/chapters_tab.py:115
+msgid "It's already the first chapter."
+msgstr "这已经是第一章。"
+
+#: ui/chapters_tab.py:129
+msgid "It's already the last chapter."
+msgstr "这已经是最后一章。"
+
+#: ui/character_tab.py:10
+msgid "Character State"
+msgstr "角色状态"
+
+#: ui/character_tab.py:15 ui/directory_tab.py:15 ui/setting_tab.py:15
+#: ui/summary_tab.py:15
+#, python-format
+msgid "Load %s"
+msgstr "加载 %s"
+
+#: ui/character_tab.py:18 ui/directory_tab.py:18 ui/setting_tab.py:18
+msgid "Save Modify"
+msgstr "保存修改"
+
+#: ui/character_tab.py:28 ui/character_tab.py:39 ui/directory_tab.py:28
+#: ui/directory_tab.py:39 ui/setting_tab.py:28 ui/summary_tab.py:28
+#: ui/summary_tab.py:39
+msgid "Please set the save file path first"
+msgstr "请先设置保存文件路径"
+
+#: ui/character_tab.py:34
+msgid "character_state.txt is loaded to the editing area."
+msgstr "targin_state.txt已加载到编辑区域。"
+
+#: ui/character_tab.py:45
+msgid "Modifications to character_state.txt have been saved. "
+msgstr "对targin_state.txt的修改已保存。"
+
+#: ui/config_tab.py:22 ui/novel_params_tab.py:126
+msgid "?"
+msgstr "?"
+
+#: ui/config_tab.py:26 ui/main_window.py:163 ui/novel_params_tab.py:130
+msgid "Parameter description"
+msgstr "参数描述"
+
+#: ui/config_tab.py:26 ui/main_window.py:162 ui/novel_params_tab.py:130
+msgid "No description yet"
+msgstr "还没有描述"
+
+#: ui/config_tab.py:39
+msgid "LLM Model settings"
+msgstr "LLM模型设置"
+
+#: ui/config_tab.py:40
+msgid "Embedding settings"
+msgstr "嵌入设置"
+
+#: ui/config_tab.py:51
+msgid "Save current configuration"
+msgstr "保存当前配置"
+
+#: ui/config_tab.py:54
+msgid "Load current configuration"
+msgstr "加载电流配置"
+
+#: ui/config_tab.py:100
+msgid "LLM API Key:"
+msgstr "LLM API密钥："
+
+#: ui/config_tab.py:105
+msgid "LLM Base URL:"
+msgstr "LLM基础网址："
+
+#: ui/config_tab.py:110
+msgid "LLM Interface format:"
+msgstr "LLM接口格式："
+
+#: ui/config_tab.py:116
+msgid "Model Name:"
+msgstr "模型名称："
+
+#: ui/config_tab.py:121
+msgid "Temperature:"
+msgstr "温度："
+
+#: ui/config_tab.py:130
+msgid "Max Tokens:"
+msgstr "最大令牌："
+
+#: ui/config_tab.py:139
+msgid "Timeout (sec):"
+msgstr "超时（SEC）："
+
+#: ui/config_tab.py:149 ui/config_tab.py:214
+msgid "Test configuration"
+msgstr "测试配置"
+
+#: ui/config_tab.py:188
+msgid "Embedding API Key:"
+msgstr "嵌入API密钥："
+
+#: ui/config_tab.py:193
+msgid "Embedding Interface format:"
+msgstr "嵌入接口格式："
+
+#: ui/config_tab.py:199
+msgid "Embedding Base URL:"
+msgstr "嵌入基础网址："
+
+#: ui/config_tab.py:204
+msgid "Embedding Model Name:"
+msgstr "嵌入型号名称："
+
+#: ui/config_tab.py:209
+msgid "Retrieval Top-K:"
+msgstr "检索Top-K："
+
+#: ui/config_tab.py:243 ui/main_window.py:104 ui/main_window.py:117
+msgid "Fantasy"
+msgstr "幻想"
+
+#: ui/config_tab.py:254
+msgid "The configuration is loaded."
+msgstr "配置已加载。"
+
+#: ui/config_tab.py:256
+msgid "Configuration file not found or cannot be read."
+msgstr "未找到或无法读取配置文件。"
+
+#: ui/config_tab.py:305
+#, python-format
+msgid "Configuration saved to %s"
+msgstr "配置保存到%s"
+
+#: ui/config_tab.py:306
+msgid "The configuration has been saved."
+msgstr "配置已保存。"
+
+#: ui/config_tab.py:308
+msgid "Error"
+msgstr "错误"
+
+#: ui/config_tab.py:308
+msgid "Save configuration failed."
+msgstr "保存配置失败。"
+
+#: ui/directory_tab.py:10
+msgid "Chapter Blueprint"
+msgstr "章蓝图"
+
+#: ui/directory_tab.py:34
+msgid "Novel_outline.txt content has been loaded to the editing area. "
+msgstr "novel_outline.txt内容已加载到编辑区域。"
+
+#: ui/directory_tab.py:45
+msgid "Saved modifications to Novel_outline.txt."
+msgstr "保存的修改为novel_outline.txt。"
+
+#: ui/generation_handlers.py:24
+msgid "Please select the save file path first"
+msgstr "请先选择保存文件路径"
+
+#: ui/generation_handlers.py:43
+msgid "Start to generate novel architecture..."
+msgstr "开始生成小说架构..."
+
+#: ui/generation_handlers.py:58
+msgid ""
+"✅ The novel architecture is generated. Please view or edit it in the 'Novel "
+"Architecture' tab."
+msgstr "✅小说架构已生成。请在“小说架构”选项卡中查看或编辑它。"
+
+#: ui/generation_handlers.py:60
+msgid "An error occurred while generating the novel architecture"
+msgstr "生成小说架构时发生了错误"
+
+#: ui/generation_handlers.py:83
+msgid "Start generating chapter blueprints..."
+msgstr "开始生成章节蓝图..."
+
+#: ui/generation_handlers.py:95
+msgid ""
+"✅ Chapter blueprint generation is completed. Please view or edit it in the "
+"'Chapter Blueprint' tab. "
+msgstr "✅章蓝图生成已经完成。请在“章节蓝图”选项卡中查看或编辑它。"
+
+#: ui/generation_handlers.py:97
+msgid "An error occurred while generating chapter blueprints"
+msgstr "生成章节蓝图时发生错误"
+
+#: ui/generation_handlers.py:105 ui/generation_handlers.py:235
+#: ui/generation_handlers.py:315 ui/generation_handlers.py:393
+msgid "Please configure the save file path first."
+msgstr "请先配置保存文件路径。"
+
+#: ui/generation_handlers.py:134
+#, python-format
+msgid ""
+"Generate the draft of the chapter %d: Prepare to generate the request prompt"
+" word..."
+msgstr "生成第%d章的草稿：准备生成请求提示字..."
+
+#: ui/generation_handlers.py:167
+msgid "Current chapter request prompt word (editable)"
+msgstr "当前章节请求提示单词（可编辑）"
+
+#: ui/generation_handlers.py:182
+msgid "Confirm use"
+msgstr "确认使用"
+
+#: ui/generation_handlers.py:184
+msgid "Cancel request"
+msgstr "取消请求"
+
+#: ui/generation_handlers.py:193
+msgid "❌ The user canceled the draft generation request."
+msgstr "❌用户取消了草稿生成请求。"
+
+#: ui/generation_handlers.py:196
+msgid "Start generating chapter drafts..."
+msgstr "开始生成章节草稿..."
+
+#: ui/generation_handlers.py:225
+msgid ""
+"⚠️ The draft of this chapter failed to be generated or there was no content."
+msgstr "⚠️本章的草稿未能生成或没有内容。"
+
+#: ui/generation_handlers.py:227
+msgid "An error occurred while generating a chapter draft"
+msgstr "生成章节草案时发生错误"
+
+#: ui/generation_handlers.py:257
+#, python-format
+msgid "Start finalizing Chapter %d..."
+msgstr "开始最终确定第%d章 ..."
+
+#: ui/generation_handlers.py:266
+msgid "Insufficient word count"
+msgstr "单词计数不足"
+
+#: ui/generation_handlers.py:266
+#, python-format
+msgid ""
+"The current chapter word count %d is lower than 80%% of the target word "
+"count (%d). Do you want to try to expand it?"
+msgstr "当前的章节字数%d低于目标单词计数的80 %%（%d）。您想尝试扩展它吗？"
+
+#: ui/generation_handlers.py:268
+msgid "Current chapter words count is: %d "
+msgstr "当前章节字数: %d"
+
+#: ui/generation_handlers.py:268
+msgid "Expanding chapter content..."
+msgstr "扩展章节内容..."
+
+#: ui/generation_handlers.py:286
+#, python-format
+msgid ""
+"✅ Chapter %d has been expended, the current word count is %d, you can do it again if still not enough the word count."
+"has been updated). "
+msgstr "✅第 %d 章已扩写完成, 当前字数是 %d, 如果你发现还未达到所要求字数, 可以继续扩写。"
+
+#: ui/generation_handlers.py:302
+#, python-format
+msgid ""
+"✅ Chapter %d is finalized (global summary, character status, vector library "
+"has been updated). "
+msgstr "✅第 %d 章已完成定稿（全局摘要，字符状态，矢量库已更新）。"
+
+#: ui/generation_handlers.py:307
+msgid "An error occurred while finalizing the chapter"
+msgstr "完成本章时发生错误"
+
+#: ui/generation_handlers.py:334
+msgid ""
+"⚠️ The current chapter file is empty or does not exist and cannot be "
+"reviewed. "
+msgstr "⚠️当前章节文件是空的，或者不存在，无法审查。"
+
+#: ui/generation_handlers.py:337
+msgid "Begin consistent review..."
+msgstr "开始一致的评论..."
+
+#: ui/generation_handlers.py:352
+msgid "Review results:"
+msgstr "评论结果："
+
+#: ui/generation_handlers.py:355
+msgid "An error occurred during review"
+msgstr "审查期间发生错误"
+
+#: ui/generation_handlers.py:362
+msgid "Select the knowledge base file to import"
+msgstr "选择要导入的知识库文件"
+
+#: ui/generation_handlers.py:374
+#, python-format
+msgid "Start importing knowledge base files: %s"
+msgstr "开始导入知识库文件：%s"
+
+#: ui/generation_handlers.py:383
+msgid "✅ The knowledge base file import is completed."
+msgstr "✅知识库文件导入完成。"
+
+#: ui/generation_handlers.py:385
+msgid "An error occurred while importing the knowledge base"
+msgstr "导入知识库时发生错误"
+
+#: ui/generation_handlers.py:396
+msgid ""
+"Are you sure you want to clear the local vector library? This operation is "
+"not restored!"
+msgstr "您确定要清除本地矢量库吗？该操作没有恢复！"
+
+#: ui/generation_handlers.py:398
+msgid "Confirmation"
+msgstr "确认"
+
+#: ui/generation_handlers.py:398
+msgid ""
+"Are you sure you really want to delete all vector data? This operation is "
+"not recoverable!"
+msgstr "您确定您真的想删除所有向量数据吗？此操作是不可回收的！"
+
+#: ui/generation_handlers.py:401
+msgid "The vector library has been cleared."
+msgstr "矢量库已被清除。"
+
+#: ui/generation_handlers.py:403
+#, python-format
+msgid ""
+"The vector library cannot be cleared. Please manually delete the vectorstore"
+" folder under %s after closing the program. "
+msgstr "矢量库无法清除。关闭程序后，请在%s下手动删除矢量店文件夹。"
+
+#: ui/generation_handlers.py:408
+msgid "Please set the save file path in the main Tab first"
+msgstr "请先在主选项卡中设置保存文件路径"
+
+#: ui/generation_handlers.py:413
+msgid "Plot points"
+msgstr "情节点"
+
+#: ui/generation_handlers.py:413
+msgid "No plot points or conflict records have been generated yet. "
+msgstr "尚未生成情节点或冲突记录。"
+
+#: ui/generation_handlers.py:418
+msgid "There are currently no recorded plot points or conflicts."
+msgstr "当前没有记录的情节点或冲突。"
+
+#: ui/generation_handlers.py:421
+msgid "Plot points/unresolved conflict"
+msgstr "情节/未解决的冲突"
+
+#: ui/generation_handlers.py:451
+msgid ""Content has been copied to clipboard successfully!""
+msgstr "内容已被成功复制到剪贴板!"
+
+#: ui/generation_handlers.py:453
+msgid "Failed to copy content to clipboard: %s"
+msgstr "复制到剪贴板失败: %s"
+
+#: ui/main_tab.py:11
+msgid "Main Functions"
+msgstr "主要功能"
+
+#: ui/main_tab.py:36
+msgid "Contents of this chapter (editable)"
+msgstr "本章的内容（可编辑）"
+
+#: ui/main_tab.py:51
+msgid "Step1. Generate architecture"
+msgstr "步骤1.生成体系结构"
+
+#: ui/main_tab.py:59
+msgid "Step2. Generate outline"
+msgstr "步骤2.生成目录"
+
+#: ui/main_tab.py:67
+msgid "Step3. Generate draft"
+msgstr "步骤3.生成草稿"
+
+#: ui/main_tab.py:75
+msgid "Step4. Final chapter"
+msgstr "步骤4.定稿"
+
+#: ui/main_tab.py:82
+msgid "Output log (read-only)"
+msgstr "输出日志（仅读取）"
+
+#: ui/main_window.py:136
+msgid "Novel Generator GUI"
+msgstr "AI 小说生成器"
+
+#: ui/novel_params_tab.py:16
+msgid "Confirm Language Change"
+msgstr "确认语言更改"
+
+#: ui/novel_params_tab.py:16
+msgid "The app will be restart if you change the language, are you confirm?"
+msgstr "如果您更改语言，该应用程序将重新启动，您是否确认？"
+
+#: ui/novel_params_tab.py:25
+msgid "Language:"
+msgstr "语言："
+
+#: ui/novel_params_tab.py:30
+msgid "Topic:"
+msgstr "话题："
+
+#: ui/novel_params_tab.py:38
+msgid "Type:"
+msgstr "类型："
+
+#: ui/novel_params_tab.py:44
+msgid ""
+"Chapter counter &\n"
+" number of Word per Chapter:"
+msgstr ""
+"章节及\n"
+" 每章的单词数："
+
+#: ui/novel_params_tab.py:48 ui/novel_params_tab.py:70
+msgid "Number of Chapter:"
+msgstr "章节数量："
+
+#: ui/novel_params_tab.py:52
+msgid "Number of words per chapter:"
+msgstr "每章的单词数："
+
+#: ui/novel_params_tab.py:59
+msgid "Save the path:"
+msgstr "保存路径："
+
+#: ui/novel_params_tab.py:65
+msgid "Browse..."
+msgstr "浏览..."
+
+#: ui/novel_params_tab.py:76
+msgid "Guidance in this chapter:"
+msgstr "本章的指导："
+
+#: ui/novel_params_tab.py:85
+msgid "Core characters:"
+msgstr "核心角色："
+
+#: ui/novel_params_tab.py:89
+msgid "Key props:"
+msgstr "关键道具："
+
+#: ui/novel_params_tab.py:93
+msgid "Space coordinates:"
+msgstr "空间坐标："
+
+#: ui/novel_params_tab.py:97
+msgid "Time pressure:"
+msgstr "时间压力："
+
+#: ui/novel_params_tab.py:106
+msgid "Consistency review"
+msgstr "一致性审查"
+
+#: ui/novel_params_tab.py:109
+msgid "Import the knowledge base"
+msgstr "导入知识库"
+
+#: ui/novel_params_tab.py:112
+msgid "Clear the vector library"
+msgstr "清除矢量库"
+
+#: ui/novel_params_tab.py:115
+msgid "View the plot points"
+msgstr "查看情节点"
+
+#: ui/setting_tab.py:10
+msgid "Novel Architecture"
+msgstr "小说架构"
+
+#: ui/setting_tab.py:34
+#, python-format
+msgid "%s content loaded to the editing area."
+msgstr "%s的内容加载到编辑区域。"
+
+#: ui/setting_tab.py:39
+msgid "Please set the save file path first."
+msgstr "请先设置保存文件路径。"
+
+#: ui/setting_tab.py:45
+#, python-format
+msgid "Modifications to %s have been saved. "
+msgstr "对%s的修改已保存。"
+
+#: ui/summary_tab.py:10
+msgid "Global Summary"
+msgstr "全球摘要"
+
+#: ui/summary_tab.py:34
+#, python-format
+msgid "Loaded %s into the editing area."
+msgstr "将%s加载到编辑区域。"
+
+#: ui/summary_tab.py:45
+#, python-format
+msgid "Saved modifications to %s."
+msgstr "保存的修改为%s。"

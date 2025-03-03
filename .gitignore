@@ -1,0 +1,14 @@
+/Novel_Src
+/.venv
+/build
+/dist
+/.vscode
+/__pycache__
+/markdown
+/vectorstore
+/example
+/novel_generator/__pycache__
+/ui/__pycache__
+/tooltips/__pycache__
+/prompt/__pycache__
+config.json
