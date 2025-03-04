@@ -266,6 +266,10 @@ msgstr "targin_state.txt已加载到编辑区域。"
 msgid "Modifications to character_state.txt have been saved. "
 msgstr "对targin_state.txt的修改已保存。"
 
+#: ui/config_tab.py:22 ui/novel_params_tab.py:69
+msgid "Chapter number:"
+msgstr "章节"
+
 #: ui/config_tab.py:22 ui/novel_params_tab.py:126
 msgid "?"
 msgstr "?"
@@ -292,7 +296,7 @@ msgstr "保存当前配置"
 
 #: ui/config_tab.py:54
 msgid "Load current configuration"
-msgstr "加载电流配置"
+msgstr "加载当前配置"
 
 #: ui/config_tab.py:100
 msgid "LLM API Key:"
@@ -724,7 +728,7 @@ msgstr "对%s的修改已保存。"
 
 #: ui/summary_tab.py:10
 msgid "Global Summary"
-msgstr "全球摘要"
+msgstr "全局摘要"
 
 #: ui/summary_tab.py:34
 #, python-format
