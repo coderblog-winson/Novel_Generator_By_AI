@@ -228,6 +228,10 @@ After packaging, an executable file (such as `main.exe` under Windows) will be g
 > 3. It is recommended to clear the vectorstore directory after switching different Embedding models.
 > 4. Cloud Embedding must ensure that the corresponding API permissions are enabled
 
+8. **Detail introduction**
+
+   - You can find the detail introduction [here](https://medium.com/stackademic/the-powerful-novel-generator-by-ai-78a3710c07b9).
+
 ---
 
 ## ❓ Troubleshooting
