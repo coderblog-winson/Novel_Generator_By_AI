@@ -8,7 +8,7 @@ from tkinter import messagebox
 import customtkinter as ctk
 import traceback
 import pyperclip
-from utils import read_file, save_string_to_txt, clear_file_content
+from utils import FontManager, read_file, save_string_to_txt, clear_file_content
 from novel_generator import (
     Novel_architecture_generate,
     Chapter_blueprint_generate,
@@ -19,6 +19,8 @@ from novel_generator import (
     enrich_chapter_text
 )
 from novel_generator.consistency_checker import check_consistency
+
+font_manager = FontManager(12) 
 
 def generate_novel_architecture_ui(self):
     filepath = self.filepath_var.get().strip()
@@ -167,7 +169,7 @@ def generate_chapter_draft_ui(self):
             def create_dialog():
                 dialog = ctk.CTkToplevel(self.master)
                 dialog.title(_("Current chapter request prompt word (editable)"))
-                dialog.geometry("600x400")
+                dialog.geometry("650x800")
                 text_box = ctk.CTkTextbox(dialog, wrap="word", font=("Microsoft YaHei", 12))
                 text_box.pack(fill="both", expand=True, padx=10, pady=10)
                 text_box.insert("0.0", prompt_text)
@@ -185,6 +187,25 @@ def generate_chapter_draft_ui(self):
                 btn_confirm.pack(side="left", padx=10)
                 btn_cancel = ctk.CTkButton(button_frame, text=_("Cancel request"), font=("Microsoft YaHei", 12), command=on_cancel)
                 btn_cancel.pack(side="left", padx=10)
+                
+                increase_font_btn = ctk.CTkButton(
+                        button_frame,
+                        width=30,
+                        text="+",
+                        command=lambda: font_manager.increase_font(text_box),
+                        font=("Microsoft YaHei", 12)
+                    )
+                increase_font_btn.pack(side="left", padx=10)
+                
+                decrease_font_btn = ctk.CTkButton(
+                        button_frame,
+                        width=30,
+                        text="-",
+                        command=lambda: font_manager.decrease_font(text_box),
+                        font=("Microsoft YaHei", 12)
+                    )
+                decrease_font_btn.pack(side="left", padx=10)
+    
                 # If the user directly closes the pop-up window, call on_cancel to process
                 dialog.protocol("WM_DELETE_WINDOW", on_cancel)
                 dialog.grab_set()
