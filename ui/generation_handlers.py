@@ -221,7 +221,7 @@ def generate_chapter_draft_ui(self):
                 custom_prompt_text=edited_prompt  # Use user edited prompt words
             )
             if draft_text:
-                self.safe_log(f"✅ The draft of the chapter {chap_num} was generated. Please view or edit on the left. ")
+                self.safe_log(_("✅ The draft of the chapter %d was generated. Please view or edit on the left. ") % chap_num)
                 self.master.after(0, lambda: self.show_chapter_in_textbox(draft_text))
             else:
                 self.safe_log(_("⚠️ The draft of this chapter failed to be generated or there was no content."))

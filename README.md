@@ -13,6 +13,7 @@ This project is base on [AI_NovelGenerator](https://github.com/YILING0013/AI_Nov
  3. The expansion function has been optimized. The original version can only be expanded once and the original content is rewrite each time. However, due to the limitations of the AI ​​model, it is impossible to write too long content once. Therefore, my approach now is to continue writing on the original content and superimpose the new content every time. In this way, after many operations, a long enough content can be generated.
  4. English counting is also supported during expansion
  5. Add a button to each content page to facilitate the copying of the current content directly
+ 6. Support increase and decrease the font size in editor
 
  The following is the official instructions (I made some changes based on this modified version):
 

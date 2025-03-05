@@ -53,3 +53,21 @@ def save_data_to_json(data: dict, file_path: str) -> bool:
         print(_("[save_data_to_json] Error saving data to JSON file: %s") % str(e))
         return False
 
+    
+class FontManager:
+    def __init__(self, initial_font_size):
+        self.font_size = initial_font_size
+
+    def increase_font(self, textbox):
+        self.font_size += 1
+        self.update_text_tag(textbox)
+    
+    def decrease_font(self, textbox):       
+        self.font_size = max(10, self.font_size - 1)
+        self.update_text_tag(textbox)
+
+    def update_text_tag(self, textbox):
+        custom_font = ("Microsoft YaHei", self.font_size)
+        textbox._textbox.tag_configure("text", font=custom_font)
+        # If it is necessary to reapply the new font size to all text
+        textbox._textbox.tag_add("text", "1.0", "end")

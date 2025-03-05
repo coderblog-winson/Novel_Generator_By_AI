@@ -128,7 +128,7 @@ class NovelGeneratorGUI:
         # change_language(self.language_var.get())
         
         self.master = master
-        self.master.title(_("Novel Generator GUI"))
+        self.master.title(_("Novel Generator GUI") + " (V1.01)")
         # self.master.title("Novel Generator GUI")
         try:
             if os.path.exists("icon.ico"):

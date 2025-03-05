@@ -4,8 +4,10 @@ import os
 import customtkinter as ctk
 from tkinter import messagebox
 from ui.generation_handlers import copy_to_clipboard
-from utils import read_file, save_string_to_txt, clear_file_content
+from utils import FontManager, read_file, save_string_to_txt, clear_file_content
 from ui.context_menu import TextWidgetContextMenu
+
+font_manager = FontManager(12) 
 
 def build_setting_tab(self):
     self.setting_tab = self.tabview.add(_("Novel Architecture"))
@@ -23,6 +25,24 @@ def build_setting_tab(self):
             font=("Microsoft YaHei", 12)
         )
     copy_btn.grid(row=0, column=0, padx=200, pady=5, sticky="w")
+    
+    increase_font_btn = ctk.CTkButton(
+            self.setting_tab,
+            width=30,
+            text="+",
+            command=lambda: font_manager.increase_font(self.setting_text),
+            font=("Microsoft YaHei", 12)
+        )
+    increase_font_btn.grid(row=0, column=0, padx=380, pady=5, sticky="w")
+    
+    decrease_font_btn = ctk.CTkButton(
+            self.setting_tab,
+            width=30,
+            text="-",
+            command=lambda: font_manager.decrease_font(self.setting_text),
+            font=("Microsoft YaHei", 12)
+        )
+    decrease_font_btn.grid(row=0, column=0, padx=420, pady=5, sticky="w")
 
     save_btn = ctk.CTkButton(self.setting_tab, text=_("Save Modify"), command=self.save_novel_architecture, font=("Microsoft YaHei", 12))
     save_btn.grid(row=0, column=0, padx=5, pady=5, sticky="e")

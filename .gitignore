@@ -11,4 +11,5 @@
 /ui/__pycache__
 /tooltips/__pycache__
 /prompt/__pycache__
+/bookenv
 config.json

@@ -435,6 +435,13 @@ msgid ""
 " word..."
 msgstr "生成第%d章的草稿：准备生成请求提示字..."
 
+#: ui/generation_handlers.py:224
+#, python-format
+msgid ""
+"✅ The draft of the chapter %d was generated. Please view or edit on the left. "
+" word..."
+msgstr "第%d章的草稿已生成。请在左边修改或者查看"
+
 #: ui/generation_handlers.py:167
 msgid "Current chapter request prompt word (editable)"
 msgstr "当前章节请求提示单词（可编辑）"

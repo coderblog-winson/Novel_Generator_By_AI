@@ -5,7 +5,9 @@ import customtkinter as ctk
 from tkinter import messagebox
 from ui.context_menu import TextWidgetContextMenu
 from ui.generation_handlers import copy_to_clipboard
-from utils import read_file, save_string_to_txt, clear_file_content
+from utils import FontManager, read_file, save_string_to_txt, clear_file_content
+
+font_manager = FontManager(12) 
 
 def build_chapters_tab(self):
     self.chapters_view_tab = self.tabview.add(_("Chapters Manage"))
@@ -41,9 +43,28 @@ def build_chapters_tab(self):
             font=("Microsoft YaHei", 12)
         )
     copy_btn.grid(row=0, column=3, padx=200, pady=5, sticky="w")
+    
+    
+    increase_font_btn = ctk.CTkButton(
+            top_frame,
+            width=30,
+            text="+",
+            command=lambda: font_manager.increase_font(self.chapter_view_text),
+            font=("Microsoft YaHei", 12)
+        )
+    increase_font_btn.grid(row=0, column=3, padx=380, pady=5, sticky="w")
+    
+    decrease_font_btn = ctk.CTkButton(
+            top_frame,
+            width=30,
+            text="-",
+            command=lambda: font_manager.decrease_font(self.chapter_view_text),
+            font=("Microsoft YaHei", 12)
+        )
+    decrease_font_btn.grid(row=0, column=3, padx=420, pady=5, sticky="w")
 
     refresh_btn = ctk.CTkButton(top_frame, text=_("refresh chapter list"), command=self.refresh_chapters_list, font=("Microsoft YaHei", 12))
-    refresh_btn.grid(row=0, column=4, padx=5, pady=5, sticky="e")
+    refresh_btn.grid(row=0, column=3, padx=550, pady=5, sticky="w")
 
     self.chapter_view_text = ctk.CTkTextbox(self.chapters_view_tab, wrap="word", font=("Microsoft YaHei", 12))
     TextWidgetContextMenu(self.chapter_view_text)
