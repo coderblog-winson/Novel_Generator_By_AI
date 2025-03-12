@@ -55,7 +55,8 @@ class DeepSeekAdapter(BaseLLMAdapter):
             base_url=self.base_url,
             max_tokens=self.max_tokens,
             temperature=self.temperature,
-            timeout=self.timeout
+            timeout=self.timeout,
+            streaming=True
         )
 
     def invoke(self, prompt: str) -> str:
